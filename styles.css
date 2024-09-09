@@ -7,6 +7,8 @@ body {
     margin: 0;
     background-color: #f0f0f0;
 }
+
+/* First Window with Background Image */
 #window1 {
     text-align: center;
     padding: 40px;
@@ -24,6 +26,10 @@ body {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Positioning to overlap windows properly */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hidden {
@@ -39,6 +45,7 @@ button {
     background-color: #007bff;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -48,4 +55,14 @@ button:hover {
 .menu-item {
     margin: 10px 0;
 }
+
+.backButton {
+    margin-top: 20px;
+    background-color: #6c757d; /* Different color for back button */
+}
+
+.backButton:hover {
+    background-color: #5a6268; /* Hover color for back button */
+}
+
 
