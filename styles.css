@@ -31,7 +31,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 .hidden {
     display: none;
 }
