@@ -15,3 +15,17 @@ document.getElementById('calculateButton').addEventListener('click', function() 
     document.getElementById('totalAmount').innerText = `$${totalAmount}`;
 });
 
+// Event listener for all back buttons
+document.querySelectorAll('.backButton').forEach(function(button) {
+    button.addEventListener('click', function() {
+        const targetWindow = this.getAttribute('data-target');
+        // Hide all windows
+        document.querySelectorAll('.window').forEach(function(win) {
+            win.classList.add('hidden');
+        });
+        // Show the target window
+        document.getElementById(targetWindow).classList.remove('hidden');
+    });
+});
+
+
